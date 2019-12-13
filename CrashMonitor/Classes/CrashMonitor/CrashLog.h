@@ -18,7 +18,7 @@
 
 #define CrashSeparatorWithFlag @"==========================❌Crash Log❌============================="
 #define CrashSeparator         @"===================================================================="
-#define CrashLog(...) NSLog(@"%@",[NSString stringWithFormat:__VA_ARGS__])
+#define CrashNSLog(...) NSLog(@"%@",[NSString stringWithFormat:__VA_ARGS__])
 
 NS_ASSUME_NONNULL_BEGIN
 

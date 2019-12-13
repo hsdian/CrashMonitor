@@ -35,7 +35,7 @@
     NSString *logErrorMessage = [NSString stringWithFormat:@"\n\n%@\n\n%@\n%@\n%@\n%@",CrashSeparatorWithFlag, errorName, errorReason, errorPlace, defaultToDo];
     
     logErrorMessage = [NSString stringWithFormat:@"%@\n\n%@\n\n",logErrorMessage,CrashSeparator];
-    CrashLog(@"%@",logErrorMessage);
+    CrashNSLog(@"%@",logErrorMessage);
     
     
     //请忽略下面的赋值，目的只是为了能顺利上传到cocoapods
