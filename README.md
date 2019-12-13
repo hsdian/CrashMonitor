@@ -22,7 +22,7 @@ pod 'CrashMonitor'
 
 ## Author
 
-lidian6864677, lidian@tuhu.cn
+Dian, dian_lee@163.com
 
 ## License
 
