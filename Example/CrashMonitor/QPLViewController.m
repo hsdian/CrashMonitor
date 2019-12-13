@@ -7,7 +7,7 @@
 //
 
 #import "QPLViewController.h"
-
+#import "NSObjectTest.h"
 @interface QPLViewController ()
 
 @end
@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSObjectTest *obj = [NSObjectTest new];
+        [obj test];
+    
+    NSArray *arr = [[NSArray alloc]init];
+//    arr[2];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,11 +7,17 @@
 //
 
 #import "QPLAppDelegate.h"
+#import "CrashHandle.h"
 
 @implementation QPLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+//    [CrashHandle handleAllCrash];
+    [[CrashHandle share] handleAllCrashWithExceptionBlock:^(NSDictionary * _Nonnull exception) {
+        NSLog(@"%@",exception);
+    }];
     // Override point for customization after application launch.
     return YES;
 }
